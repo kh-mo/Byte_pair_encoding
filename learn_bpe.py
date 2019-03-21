@@ -26,9 +26,7 @@ def learn_bpe(infile, outfile):
     most_frequent = max(stats, key=lambda x: (stats[x], x))
     outfile.write('{0} {1}\n'.format(*most_frequent))
 
-
 if __name__ == "__main__":
-
     input = open(args.input, 'r', encoding='utf8').readlines()
     with open(args.output, 'w', encoding='utf8') as out:
         learn_bpe(input, out)
