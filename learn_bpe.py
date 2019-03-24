@@ -50,7 +50,7 @@ def replace_pair(pair, vocab, indices):
 
 def learn_bpe(infile, outfile, count):
     '''bpe 학습'''
-    outfile.write('# bpe version 0.1 by kh-mo')
+    outfile.write('# bpe version 0.1 by kh-mo\n')
     vocab = get_vocabulary(infile)
 
     for i in range(count):
