@@ -1,4 +1,4 @@
-# python learn_bpe.py -input=D:/mt_data/korean-english-park.train.ko -output=D:/mt_data/korean-english-park.train.ko.bpe_result -symbol_count=2000
+# python learn_bpe.py -input=D:/mt_data/korean-english-park.train.ko -output=D:/mt_data/korean-english-park.train.ko.bpe_result -symbol_count=10
 
 import re
 import argparse
@@ -65,9 +65,3 @@ if __name__ == "__main__":
     input = open(args.input, 'r', encoding='utf8').readlines()
     with open(args.output, 'w', encoding='utf8') as out:
         learn_bpe(input, out, args.symbol_count)
-
-#
-# input = open("D:/mt_data/korean-english-park.train.ko", 'r', encoding='utf8').readlines()
-# infile = input
-# data = vocab
-# data = sorted_vocab
